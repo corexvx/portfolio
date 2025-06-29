@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Guinichi | Game Dev & Creative</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-circles">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+    <div class="circle circle-3"></div>
+  </div>
+
+  <header>
+    <div class="photo-placeholder"></div>
+    <h1>Adam Guinichi</h1>
+    <p>Business Computing Student • Game Developer • video editor • Creative</p>
+  </header>
+
+  <nav>
+    <button data-tab="home" class="active-btn"><i class="fas fa-home"></i> Home</button>
+    <button data-tab="about"><i class="fas fa-user"></i> About</button>
+    <button data-tab="skills"><i class="fas fa-code"></i> Skills</button>
+    <button data-tab="experience"><i class="fas fa-briefcase"></i> Experience</button>
+    <button data-tab="projects"><i class="fas fa-project-diagram"></i> Projects</button>
+    <button data-tab="contact"><i class="fas fa-envelope"></i> Contact</button>
+  </nav>
+
+  <main>
+    <!-- HOME SECTION -->
+    <section id="home" class="active">
+      <div class="hero">
+        <h2>Creative Developer</h2>
+        <p class="typing-text">I build games, edit videos, and create digital experiences</p>
+        <div class="scroll-down">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-card">
+          <i class="fas fa-gamepad"></i>
+          <h3>Game Development</h3>
+          <p>Passionate about creating immersive horror experiences in Unity, combining gameplay mechanics with psychological tension.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-video"></i>
+          <h3>Video Editing</h3>
+          <p>Specializing in cinematic storytelling through editing, color grading, and motion graphics in DaVinci Resolve.</p>
+        </div>
+        <div class="about-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Education</h3>
+          <p>Business Computing student at ISGT (Institut Supérieur de Gestion de Tunis), blending technical skills with creative vision.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+      <div class="section-header">
+        <h2>My Skills</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3><i class="fas fa-gamepad"></i> Game Dev</h3>
+          <div class="skill" data-level="85">
+            <span>Unity</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+          <div class="skill" data-level="75">
+            <span>C# Programming</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+          <div class="skill" data-level="70">
+            <span>3D Modeling</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-film"></i> Video</h3>
+          <div class="skill" data-level="90">
+            <span>DaVinci Resolve</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+          <div class="skill" data-level="80">
+            <span>Color Grading</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+          <div class="skill" data-level="75">
+            <span>Motion Graphics</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-paint-brush"></i> Design</h3>
+          <div class="skill" data-level="85">
+            <span>Photoshop</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+          <div class="skill" data-level="80">
+            <span>Illustrator</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+          <div class="skill" data-level="70">
+            <span>UI/UX Design</span>
+            <div class="skill-bar"><div class="skill-level"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="section-header">
+        <h2>Experience</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <div class="timeline-content">
+            <h3>Independent Game Developer</h3>
+            <p>Creating Unity game prototypes and participating in game jams. Developed multiple horror game concepts including "Echoes of ISGT".</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2022 - Present</div>
+          <div class="timeline-content">
+            <h3>Freelance Video Editor</h3>
+            <p>Produced cinematic edits and motion graphics for clients using DaVinci Resolve. Specialized in action/sports montages.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - Present</div>
+          <div class="timeline-content">
+            <h3>Graphic Designer</h3>
+            <p>Created digital artwork, logos, and social media graphics using Photoshop and Illustrator.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- PROJECTS SECTION -->
+<section id="projects">
+  <div class="section-header">
+    <h2>My Projects</h2>
+    <div class="underline"></div>
+  </div>
+
+  <!-- Game Dev Projects -->
+  <div class="project-category">
+    <h3><i class="fas fa-gamepad"></i> Game Development</h3>
+    <div class="projects-grid">
+      <!-- ECHOES OF ISGT PROJECT -->
+      <div class="project-card">
+        <div class="project-header">
+          <h4>Echoes of ISGT</h4>
+          <span class="project-tag prototype">Prototype</span>
+        </div>
+        <p class="project-description">A Slender-like horror game set in my faculty featuring procedural generation and dynamic AI.</p>
+        
+       
+       
+        <video controls width="100%">
+          <source src="Desktop 2025.01.30 - 18.56.02.03.mp4"video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        
+      </div>
+
+      <!-- OUT OF STOCK PROJECT -->
+      <div class="project-card">
+        <div class="project-header">
+          <h4>Out of Stock</h4>
+          <span class="project-tag demo">Demo</span>
+        </div>
+        <p class="project-description">Horror FPS demo created using Unity's Horror FPS Kit for a school project.</p>
+        
+        <!-- ITCH.IO LINK -->
+        <div class="project-links">
+          <a href="https://zaryacreations.itch.io/out-of-stock" class="itch-link" target="_blank">
+            <i class="fab fa-itch-io"></i> Play on itch.io
+          </a>
+        </div>
+        
+        
+      
+        <video controls width="100%">
+          <source src="Trailer.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+       
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Projects -->
+  <div class="project-category">
+    <h3><i class="fas fa-video"></i> Video Editing (under construction wla chnwa)</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h4>Cinematic Montages</h4>
+        <p class="project-description">Action-packed edits with custom transitions and color grading.</p>
+        
+        <!-- VIDEO EMBED LOCATION -->
+        <!-- Replace this div with your video tag -->
+        <div class="project-media">
+          <div class="video-placeholder">
+            <i class="fas fa-play"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Design Projects -->
+  <div class="project-category">
+    <h3><i class="fas fa-paint-brush"></i> Graphic Design(under construction zeda)</h3>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h4>Digital Artwork</h4>
+        <p class="project-description">Character designs and concept art created in Photoshop.</p>
+        
+        <!-- IMAGE EMBED LOCATION -->
+        <!-- Replace this div with your image tag like:
+        <img src="images/your-design.jpg" alt="Design work" style="width:100%">
+        -->
+        <div class="project-media image-placeholder">
+          <i class="fas fa-image"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <div class="underline"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-card">
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <a href="mailto:adamgnichi@gmail.com">adamgnichi@gmail.com</a>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/adam-guinichi-218038285/" target="_blank" class="social-btn linkedin">
+              <i class="fab fa-linkedin-in"></i>
+              LinkedIn
+            </a>
+            
+            <a href="https://github.com/corexvx" target="_blank" class="social-btn github">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Adam Guinichi </p>
+  
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
