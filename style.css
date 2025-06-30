@@ -81,21 +81,37 @@ header {
   position: relative;
 }
 
-.photo-placeholder {
-  width: 150px;
-  height: 150px;
+.photo-container {
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 25px;
   border-radius: 50%;
-  background: var(--dark-accent);
-  margin: 0 auto 20px;
+  overflow: hidden;
   border: 4px solid var(--primary);
   box-shadow: 0 5px 20px rgba(0,0,0,0.3);
   position: relative;
-  overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-.photo-placeholder:hover {
+.profile-photo {
+  position: absolute;
+  width: 102%; 
+  height: 102%;
+  object-fit: cover;
+  object-position: center 10%; 
+  left: -1%; 
+  top: -1%;
+  transition: object-position 0.3s ease;
+}
+
+
+.photo-container:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
+}
+
+.photo-container:hover .profile-photo {
+  object-position: center 25%; 
 }
 
 header h1 {
