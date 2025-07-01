@@ -1,4 +1,4 @@
-/* ==== BASE STYLES ==== */
+/* base colors*/
 :root {
   --primary: #e94560;
   --dark: #0f0f12;
@@ -23,7 +23,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ==== BACKGROUND CIRCLES ==== */
+/* circles */
 .background-circles {
   position: fixed;
   top: 0;
@@ -74,7 +74,7 @@ body {
   50% { transform: translateY(-20px) translateX(20px); }
 }
 
-/* ==== HEADER ==== */
+/* lheader */
 header {
   text-align: center;
   padding: 80px 20px 40px;
@@ -105,7 +105,7 @@ header {
   transition: all 0.3s ease;
 }
 
-/* Hover effects */
+/* hover effect */
 .photo-container:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
@@ -136,7 +136,7 @@ header p {
   margin: 0 auto;
 }
 
-/* ==== NAVIGATION ==== */
+/* nav */
 nav {
   background: var(--darker);
   display: flex;
@@ -184,7 +184,7 @@ nav button.active-btn::after {
   border-radius: 3px;
 }
 
-/* ==== MAIN CONTENT ==== */
+/* main */
 main {
   padding: 40px 20px;
   max-width: 1200px;
@@ -206,7 +206,7 @@ section.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ==== SECTION HEADERS ==== */
+/* sections */
 .section-header {
   text-align: center;
   margin-bottom: 50px;
@@ -231,7 +231,7 @@ section.active {
   border-radius: 2px;
 }
 
-/* ==== HOME SECTION ==== */
+/* home */
 #home {
   min-height: calc(100vh - 200px);
   display: flex;
@@ -295,7 +295,7 @@ section.active {
   }
 }
 
-/* ==== ABOUT SECTION ==== */
+/* abt */
 .about-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -330,7 +330,7 @@ section.active {
   color: var(--light);
 }
 
-/* ==== SKILLS SECTION ==== */
+/* skills*/
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -382,7 +382,7 @@ section.active {
   transition: width 1.5s ease-out;
 }
 
-/* ==== EXPERIENCE SECTION ==== */
+/* =exp*/
 .timeline {
   position: relative;
   max-width: 800px;
@@ -459,7 +459,7 @@ section.active {
   left: -10px;
 }
 
-/* ==== PROJECTS SECTION ==== */
+/* projects */
 .project-category {
   margin-bottom: 80px;
   text-align: center;
@@ -605,7 +605,7 @@ section.active {
   color: #ff6b8b;
 }
 
-/* ==== CONTACT SECTION ==== */
+/* contact */
 .contact-container {
   max-width: 600px;
   margin: 0 auto;
@@ -678,7 +678,7 @@ section.active {
   background: #333;
 }
 
-/* ==== FOOTER ==== */
+/* lfooter */
 footer {
   text-align: center;
   padding: 30px 20px;
@@ -687,7 +687,7 @@ footer {
   margin-top: 50px;
 }
 
-/* ==== RESPONSIVE STYLES ==== */
+/* resp styles*/
 @media (max-width: 992px) {
   .timeline::before {
     left: 40px;
