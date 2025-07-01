@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Typing effect
   const typingText = document.querySelector('.typing-text');
   const texts = [
     "I build games in Unity",
-    "I create cinematic edits",
+   "I create cinematic edits",
     "I design digital experiences",
     "I'm a Business Computing student"
   ];
@@ -36,8 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   setTimeout(type, 1000);
-
-  // Animate skill bars
+  
   function animateSkillBars() {
     const skills = document.querySelectorAll('.skill');
     skills.forEach(skill => {
@@ -47,39 +45,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Tab navigation
-  const buttons = document.querySelectorAll('nav button');
+  
+const buttons = document.querySelectorAll('nav button');
   const sections = document.querySelectorAll('main section');
   
   buttons.forEach(button => {
     button.addEventListener('click', function() {
-      // Remove active classes
+     
       buttons.forEach(btn => btn.classList.remove('active-btn'));
       sections.forEach(sec => sec.classList.remove('active'));
       
-      // Add active class to clicked button
-      this.classList.add('active-btn');
+    this.classList.add('active-btn');
       
-      // Show corresponding section
+    
       const targetId = this.getAttribute('data-tab');
       document.getElementById(targetId).classList.add('active');
       
-      // Smooth scroll to section
       document.getElementById(targetId).scrollIntoView({
         behavior: 'smooth'
       });
       
-      // Animate skills when skills section is opened
+  
       if (targetId === 'skills') {
         animateSkillBars();
       }
     });
   });
   
-  // Initialize first section
+  
   document.querySelector('nav button[data-tab="home"]').click();
 
-  // Animate background circles on mouse move
+
   const circles = document.querySelectorAll('.circle');
   document.addEventListener('mousemove', function(e) {
     const x = e.clientX / window.innerWidth;
@@ -90,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
     circles[2].style.transform = `translate(${x * 20}px, ${y * -20}px)`;
   });
 
-  // Scroll reveal animation
+  
   const animateOnScroll = function() {
     const elements = document.querySelectorAll('.about-card, .skill-category, .timeline-item, .project-card');
     
@@ -105,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
   
-  // Set initial state for animation
+
   document.querySelectorAll('.about-card, .skill-category, .timeline-item, .project-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -113,5 +109,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   window.addEventListener('scroll', animateOnScroll);
-  animateOnScroll(); // Run once on load
+  animateOnScroll(); 
 });
