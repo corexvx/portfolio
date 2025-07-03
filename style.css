@@ -1,4 +1,4 @@
-/*basic stuff*/
+/* ==== Base ==== */
 :root {
   --primary: #e94560;
   --dark: #0f0f12;
@@ -11,13 +11,18 @@
 
 * {
   margin: 0;
-padding: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+/*body {
+  background: var(--dark);
+  color: var(--light);
+  line-height: dsq
+  overflow-x: hidden;
+}*/
 body {
- background: var(--dark);
+  background: var(--dark);
   color: var(--light);
   line-height: 1.6;
   overflow-x: hidden;
@@ -67,7 +72,7 @@ body {
 .gallery-item {
   cursor: pointer;
 }
-/* music ig*/
+/*  music  */
 .music-control {
   position: fixed;
   bottom: 20px;
@@ -105,7 +110,7 @@ body {
   accent-color: var(--primary);
 }
 
-/* circles*/
+/* ==== back circles ==== */
 .background-circles {
   position: fixed;
   top: 0;
@@ -183,7 +188,7 @@ body {
   100% { background-color: #3a3a5a; }
 }
 
-/* design gallery */
+/* ==== graphic des gallery ==== */
 .design-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -244,7 +249,7 @@ body {
 }
 
 
-/* lheader*/
+/* ==== lheader ==== */
 header {
   text-align: center;
   padding: 80px 20px 40px;
@@ -275,7 +280,7 @@ header {
   transition: all 0.3s ease;
 }
 
-/* Hover eff */
+/* Hover effects */
 .photo-container:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(233, 69, 96, 0.4);
@@ -306,7 +311,7 @@ header p {
   margin: 0 auto;
 }
 
-/* nav*/
+/* ==== Nav ==== */
 nav {
   background: var(--darker);
   display: flex;
@@ -354,7 +359,7 @@ nav button.active-btn::after {
   border-radius: 3px;
 }
 
-/*main */
+/* ==== main ==== */
 main {
   padding: 40px 20px;
   max-width: 1200px;
@@ -376,7 +381,7 @@ section.active {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* ==== SECTION HEADERS ==== */
+/* ==== sections ==== */
 .section-header {
   text-align: center;
   margin-bottom: 50px;
@@ -401,7 +406,7 @@ section.active {
   border-radius: 2px;
 }
 
-/* ==== HOME SECTION ==== */
+/* ==== home ==== */
 #home {
   min-height: calc(100vh - 200px);
   display: flex;
@@ -465,7 +470,7 @@ section.active {
   }
 }
 
-/* about sec*/
+/* === about */
 .about-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -500,7 +505,7 @@ section.active {
   color: var(--light);
 }
 
-/* skilss*/
+/* ==== skills==== */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -552,7 +557,7 @@ section.active {
   transition: width 1.5s ease-out;
 }
 
-/* exp(hh) */
+/* ==== exp ==== */
 .timeline {
   position: relative;
   max-width: 800px;
@@ -629,7 +634,7 @@ section.active {
   left: -10px;
 }
 
-/* projects */
+/* ==== projects ==== */
 .project-category {
   margin-bottom: 80px;
   text-align: center;
@@ -775,7 +780,7 @@ section.active {
   color: #ff6b8b;
 }
 
-/* contact */
+/* ==== contact ==== */
 .contact-container {
   max-width: 600px;
   margin: 0 auto;
@@ -848,7 +853,7 @@ section.active {
   background: #333;
 }
 
-/* lfooter*/
+/* ==== footer ==== */
 footer {
   text-align: center;
   padding: 30px 20px;
@@ -857,7 +862,7 @@ footer {
   margin-top: 50px;
 }
 
-/* resp styles */
+/* ==== resp styles ==== */
 @media (max-width: 992px) {
   .timeline::before {
     left: 40px;
