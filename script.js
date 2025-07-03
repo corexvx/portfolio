@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // ===== MUSIC CONTROLS =====
+  // music
   const bgMusic = document.getElementById('bg-music');
   const musicToggle = document.getElementById('music-toggle');
   const volumeControl = document.getElementById('volume-control');
   
-  // Set initial volume to 30%
+  // 
   bgMusic.volume = 0.3;
   volumeControl.value = 0.3;
   
@@ -24,12 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
   
-  // Volume control
+  // Volume 
   volumeControl.addEventListener('input', function() {
     bgMusic.volume = this.value;
   });
   
-  // Handle autoplay policy
+  // auto play music
   const unlockAudio = () => {
     bgMusic.play()
       .then(() => {
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('keydown', unlockAudio);
   window.addEventListener('scroll', unlockAudio);
 
-  // ===== ENHANCED BACKGROUND CIRCLES =====
+  // ===== improved backround circles v2 =====
   const circles = document.querySelectorAll('.circle');
   
   // Mouse move interaction
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     circles[2].style.opacity = 0.25 + (x * y) * 0.15;
   });
 
-  // Pause animations when tab is not active
+  // Pause anima
   document.addEventListener('visibilitychange', function() {
     const state = document.hidden ? 'paused' : 'running';
     circles.forEach(circle => {
@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ===== SIMPLE IMAGE MODAL =====
-  // Create modal element
+  // ===== image modal =====
+  // 
   const modal = document.createElement('div');
   modal.className = 'image-modal';
   modal.innerHTML = `
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
   `;
   document.body.appendChild(modal);
 
-  // Open modal when gallery item is clicked
+  //
   document.querySelectorAll('.gallery-item img').forEach(img => {
     img.addEventListener('click', function() {
       const modalImg = modal.querySelector('img');
@@ -95,13 +95,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Close modal
+  
   modal.querySelector('.close-modal').addEventListener('click', function() {
     modal.classList.remove('active');
     document.body.style.overflow = 'auto';
   });
 
-  // Close modal when clicking outside the image
+ 
   modal.addEventListener('click', function(e) {
     if (e.target === modal) {
       modal.classList.remove('active');
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // Close modal with Escape key
+  // 
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && modal.classList.contains('active')) {
       modal.classList.remove('active');
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-  // ===== TYPING EFFECT =====
+  // ===== typing effect (might change)=====
   const typingText = document.querySelector('.typing-text');
   const texts = [
     "I build games in Unity",
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   setTimeout(type, 1000);
 
-  // ===== SKILL BAR ANIMATION =====
+  // ===== skill bar animation(might change too)=====
   function animateSkillBars() {
     const skills = document.querySelectorAll('.skill');
     skills.forEach(skill => {
@@ -165,39 +165,38 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // ===== TAB NAVIGATION =====
+  // ===== tab nav
   const buttons = document.querySelectorAll('nav button');
   const sections = document.querySelectorAll('main section');
   
   buttons.forEach(button => {
     button.addEventListener('click', function() {
-      // Remove active classes
+    
       buttons.forEach(btn => btn.classList.remove('active-btn'));
       sections.forEach(sec => sec.classList.remove('active'));
       
-      // Add active class to clicked button
       this.classList.add('active-btn');
       
-      // Show corresponding section
+
       const targetId = this.getAttribute('data-tab');
       document.getElementById(targetId).classList.add('active');
       
-      // Smooth scroll to section
+      
       document.getElementById(targetId).scrollIntoView({
         behavior: 'smooth'
       });
       
-      // Animate skills when skills section is opened
+      // skill animation(bars)
       if (targetId === 'skills') {
         animateSkillBars();
       }
     });
   });
   
-  // Initialize first section
+  
   document.querySelector('nav button[data-tab="home"]').click();
 
-  // ===== SCROLL REVEAL ANIMATION =====
+  // lscroll anim
   const animateOnScroll = function() {
     const elements = document.querySelectorAll('.about-card, .skill-category, .timeline-item, .project-card, .gallery-item');
     
@@ -212,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
   
-  // Set initial state for animation
+  // first state taa l animation
   document.querySelectorAll('.about-card, .skill-category, .timeline-item, .project-card, .gallery-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -220,5 +219,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   window.addEventListener('scroll', animateOnScroll);
-  animateOnScroll(); // Run once on load
+  animateOnScroll(); 
 });
